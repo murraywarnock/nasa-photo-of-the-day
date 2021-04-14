@@ -2,6 +2,15 @@
 
 This will be a two-module project. In it you will consume the NASA API to fetch the "Astronomy Photo Of The Day" or APOD. Once you fetch the data, you will build a few components that will render different pieces of data in your interface. After the second module (in the [DAY_TWO_README.md](DAY_TWO_README.md) file) you will re-style your app using [Styled Components](https://github.com/LambdaSchool/nasa-photo-of-the-day.git).
 
+****************
+Your API key for murray.warnock@gmail.com is:
+
+Ozskqsra7TJ7xDjtUnxXAKhPL9gcQwR5UsYN4uuJ
+You can start using this key to make web service requests. Simply pass your key in the URL when making a web request. Here's an example:
+
+https://api.nasa.gov/planetary/apod?api_key=Ozskqsra7TJ7xDjtUnxXAKhPL9gcQwR5UsYN4uuJ
+***************
+
 ## Instructions
 
 ---
