@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+// import React, { useState, useEffect } from 'react';
+import React from 'react';
 export default function Photo(props) {
     const {imgURL, imgExplanation, imgDate} = props;
     // const {imgExplanation, imgDate} = props;
