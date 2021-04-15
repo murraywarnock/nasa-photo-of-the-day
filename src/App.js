@@ -21,7 +21,7 @@ function App() {
     })
   }, []);
   // console.log(apod); //apod is visible with data here
-  return <Photo imgExplanation={apod.explanation} imgDate={apod.date} imgURL={apod.hdurl} />;
+  return <Photo imgExplanation={apod.explanation} imgDate={apod.date} imgURL={apod.hdurl} title={apod.title} />;
 }
 
 export default App;

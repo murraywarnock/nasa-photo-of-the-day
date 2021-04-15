@@ -7,11 +7,12 @@ const StyledPhoto = styled.div`
   color: green;
 //  within component listed by element
   .blowup {
+    display: inline-block;
   // h1 {
     color: black;
     &:hover {
       color: red;
-      transform: scale(1.2); //this works in h1, but not in .blowup class
+      transform: scale(1.2); //had to change display to inline-block for this to work
       transition: all .5s ease-in-out;
     }
     transition: all .5s ease-in-out;
@@ -29,11 +30,13 @@ const StyledPhoto = styled.div`
   p {
     color: blue;
   }
+  .imgTitle {
+    color: black;
+    font-weight: bold;
+  }
 `
 
-export default function Photo(props) {
-    const {imgURL, imgExplanation, imgDate} = props;
-    // const {imgExplanation, imgDate} = props;
+export default function Photo({imgDate, imgURL, title, imgExplanation}) {
     return (
     <StyledPhoto>
     <div className="App">
@@ -41,6 +44,7 @@ export default function Photo(props) {
       <div className="img-container" >
         {/* console.log(apod.url); */}
         <img className = "image" src={imgURL} alt="NASA APOD"></img>
+        <p className = "imgTitle"> {title}</p>
         <p className = "img-text">
           {/* Read through the instructions in the README.md file to build your NASA
           app! Have fun <span role="img" aria-label='go!'>🚀</span>! */}
