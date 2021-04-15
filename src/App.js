@@ -3,7 +3,7 @@ import axios from "axios";
 import { BASE_URL, API_KEY } from './constants/index'
 
 import "./App.css";
-import Photo from "./Photo";
+import Photo from "./components/Photo";
 
 function App() {
 
